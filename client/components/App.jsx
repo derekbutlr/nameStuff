@@ -11,6 +11,11 @@ import request from 'superagent'
 //   accessibility: ''
 // }
 
+
+let activityStuff = {
+
+}
+
 class App extends React.Component {
   state = {
     activity: '',
@@ -22,12 +27,17 @@ class App extends React.Component {
     accessibility: ''
   }
 
+
+
   // componentDidMount() {
   //   this.getMyActivity()
   // }
 
+
+
   handleClick = () => {
     this.getMyActivity()
+    this.ControlSection()
   }
 
   getMyActivity = () => {
@@ -49,15 +59,15 @@ class App extends React.Component {
   render() {
     return (
       <>
-        {this.state.activity ?
-          <p>{this.state.activity}
-           <p></p>{this.state.type} {this.state.participants}
-            {this.state.price}
-             {this.state.link}
-              {this.state.key}
-               {this.state.accessibility}</p>
-          : <h1>Welcome</h1>}
-        <button onClick={this.handleClick}>You are bored</button>
+        <div id='activity'>{this.state.activity}</div>
+        <div id='type'>{this.state.type}</div>
+        <div id='participants'>{this.state.participants}</div>
+        <div id='price'>{this.state.price}</div>
+        <div id='link'>{this.state.link}</div>
+        <div id='key'>{this.state.key}</div>
+        <div id='accessibility'>{this.state.accessibility}</div>
+        <button onClick={this.handleClick}>Find something to do!</button>
+        <h1> TRY THIS! </h1>
       </>
     )
   }
