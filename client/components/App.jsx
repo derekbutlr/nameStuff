@@ -119,7 +119,7 @@ class App extends React.Component {
 
             <button onClick={this.handleClick}>Find something to do!</button></div>
           <div style={{ color: 'green', textAlign: 'center' }}>
-            <h1 > TRY THIS! </h1></div>
+            <h1 > or dont </h1></div>
       </>
     )
   }

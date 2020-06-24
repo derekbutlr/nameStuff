@@ -52,6 +52,10 @@ body {
     margin: 0;
     overflow-x: hidden;
     padding: 1rem 0;
+    background-image:url('https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
 }
 
 footer,
