@@ -59,17 +59,18 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div style={{ color: 'green', textAlign: 'center', fontStyle: 'italic' }}>
+        <div style={{ color: 'thistle', textAlign: 'center', fontStyle: 'italic' }}>
           <h1> Kill your boredom by:</h1></div>
         <div style={{
           textAlign: 'center',
           fontSize: '55px',
-          marginBottom: '35px' 
+          marginBottom: '35px',
+          color: 'red' 
         }}>
           {this.state.activity} 
         </div>
 
-        <div style={{ color: 'green', textAlign: 'center' }}>
+        <div style={{ color: 'thistle', textAlign: 'center' }}>
           <p>Type of activity:</p></div>
         <div style={{
           textAlign: 'center', 
@@ -77,7 +78,7 @@ class App extends React.Component {
           textTransform: 'uppercase',
         }}>{this.state.type} </div>
 
-          <div style={{ color: 'green', textAlign: 'center' }}>
+          <div style={{ color: 'thistle', textAlign: 'center' }}>
             <p>People required:</p></div>
 
           <div style={{
@@ -85,7 +86,7 @@ class App extends React.Component {
             textTransform: 'uppercase'
           }}>{this.state.participants}</div>
 
-          <div style={{ color: 'green', textAlign: 'center' }}>
+          <div style={{ color: 'thistle', textAlign: 'center' }}>
             <p>Cost:$</p></div>
 
           <div style={{
@@ -93,7 +94,7 @@ class App extends React.Component {
             textTransform: 'uppercase'
           }}>{this.state.price}</div>
 
-          <div style={{ color: 'green', textAlign: 'center' }}>
+          <div style={{ color: 'thistle', textAlign: 'center' }}>
             <p>Link(if available!):</p></div>
 
           <div style={{
@@ -115,7 +116,7 @@ class App extends React.Component {
           <div style={{ textAlign: 'center' }}>
 
             <button onClick={this.handleClick}>Find something to do!</button></div>
-          <div style={{ color: 'green', textAlign: 'center' }}>
+          <div style={{ color: 'thistle', textAlign: 'center' }}>
             <h1 > or dont </h1></div>
       </>
     )
