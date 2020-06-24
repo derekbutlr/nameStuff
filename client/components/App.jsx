@@ -12,9 +12,10 @@ import request from 'superagent'
 // }
 
 
-let activityStuff = {
-
-}
+const activityDiv = {
+  color: 'blue',
+  fontSize: '200px',
+};
 
 class App extends React.Component {
   state = {
@@ -37,7 +38,6 @@ class App extends React.Component {
 
   handleClick = () => {
     this.getMyActivity()
-    this.ControlSection()
   }
 
   getMyActivity = () => {
@@ -59,15 +59,67 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div id='activity'>{this.state.activity}</div>
-        <div id='type'>{this.state.type}</div>
-        <div id='participants'>{this.state.participants}</div>
-        <div id='price'>{this.state.price}</div>
-        <div id='link'>{this.state.link}</div>
-        <div id='key'>{this.state.key}</div>
-        <div id='accessibility'>{this.state.accessibility}</div>
-        <button onClick={this.handleClick}>Find something to do!</button>
-        <h1> TRY THIS! </h1>
+        <div style={{ color: 'green', textAlign: 'center', fontStyle: 'italic' }}>
+          <h1> Kill your boredom by:</h1></div>
+        <div style={{
+          textAlign: 'center'
+        }}>
+          {this.state.activity}
+        </div>
+
+        <div style={{ color: 'green', textAlign: 'center' }}>
+          <p>Type of activity:</p></div>
+        <div style={{
+          textAlign: 'center', 
+          fontStyle: 'bold',
+          textTransform: 'uppercase' }}>{this.state.type} </div>
+
+          <div style={{ color: 'green', textAlign: 'center' }}>
+            <p>People required:</p></div>
+
+          <div style={{
+            textAlign: 'center',
+            textTransform: 'uppercase'
+          }}>{this.state.participants}</div>
+
+          <div style={{ color: 'green', textAlign: 'center' }}>
+            <p>Cost:$</p></div>
+
+          <div style={{
+            textAlign: 'center',
+            textTransform: 'uppercase'
+          }}>{this.state.price}</div>
+
+          <div style={{ color: 'green', textAlign: 'center' }}>
+            <p>Link(if available!):</p></div>
+
+          <div style={{
+            textAlign: 'center',
+            textTransform: 'uppercase'
+          }}>{this.state.link}</div>
+
+          {/* <div style={{ color: 'green', textAlign: 'center' }}>
+            <p>Key:</p></div>
+
+          <div style={{
+            textAlign: 'center',
+            textTransform: 'uppercase'
+          }}>{this.state.key}</div> */}
+
+          <div style={{ color: 'green', textAlign: 'center' }}>
+            <p>Accessibility:</p></div>
+
+          <div style={{ textAlign: 'center' }}>{this.state.accessibility}
+
+          <div style={{
+              textAlign: 'center',
+              textTransform: 'uppercase'
+            }}></div>
+
+
+            <button onClick={this.handleClick}>Find something to do!</button></div>
+          <div style={{ color: 'green', textAlign: 'center' }}>
+            <h1 > TRY THIS! </h1></div>
       </>
     )
   }
