@@ -62,9 +62,11 @@ class App extends React.Component {
         <div style={{ color: 'green', textAlign: 'center', fontStyle: 'italic' }}>
           <h1> Kill your boredom by:</h1></div>
         <div style={{
-          textAlign: 'center'
+          textAlign: 'center',
+          fontSize: '55px',
+          marginBottom: '35px' 
         }}>
-          {this.state.activity}
+          {this.state.activity} 
         </div>
 
         <div style={{ color: 'green', textAlign: 'center' }}>
@@ -72,7 +74,8 @@ class App extends React.Component {
         <div style={{
           textAlign: 'center', 
           fontStyle: 'bold',
-          textTransform: 'uppercase' }}>{this.state.type} </div>
+          textTransform: 'uppercase',
+        }}>{this.state.type} </div>
 
           <div style={{ color: 'green', textAlign: 'center' }}>
             <p>People required:</p></div>
@@ -106,16 +109,10 @@ class App extends React.Component {
             textTransform: 'uppercase'
           }}>{this.state.key}</div> */}
 
-          <div style={{ color: 'green', textAlign: 'center' }}>
-            <p>Accessibility:</p></div>
+          {/* <div style={{ color: 'green', textAlign: 'center' }}>
+            <p>Accessibility:</p></div>{this.state.accessibility} */}
 
-          <div style={{ textAlign: 'center' }}>{this.state.accessibility}
-
-          <div style={{
-              textAlign: 'center',
-              textTransform: 'uppercase'
-            }}></div>
-
+          <div style={{ textAlign: 'center' }}>
 
             <button onClick={this.handleClick}>Find something to do!</button></div>
           <div style={{ color: 'green', textAlign: 'center' }}>
