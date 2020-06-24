@@ -87,7 +87,7 @@ class App extends React.Component {
           }}>{this.state.participants}</div>
 
           <div style={{ color: 'thistle', textAlign: 'center' }}>
-            <p>Cost:$</p></div>
+            <p>Spend rating:</p></div>
 
           <div style={{
             textAlign: 'center',
